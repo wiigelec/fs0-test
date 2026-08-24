@@ -1,0 +1,25 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-FRAMEWORK",
+  "requirements": [
+    {
+      "id": "FS0-FC-097",
+      "statement": "The operating substrate SHALL resolve the canonical repository-structure configuration identity through a location-independent mechanism.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-098",
+      "statement": "A structurally permitted filesystem object MAY be absent without causing repository-structure Conformance failure.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-099",
+      "statement": "Implementation defaults, generated output lists, version-control ignore rules, workflow conventions, historical presence, and prior validation SHALL NOT independently authorize filesystem structure.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "1",
+  "record_type": "fs0-generation-contract",
+  "record_schema_version": "1",
+  "record_types": {
+    "model": "fs0-bootstrap-model",
+    "requirement": "requirement",
+    "authority": "authority",
+    "requirement_registry": "requirement-registry",
+    "conformance_correspondence": "conformance-correspondence",
+    "conformance_correspondence_registry": "conformance-correspondence-registry",
+    "assertion_definition": "assertion-definition",
+    "assertion_definition_registry": "assertion-definition-registry",
+    "assurance_correspondence": "assurance-correspondence",
+    "assurance_correspondence_registry": "assurance-correspondence-registry",
+    "assurance_obligation_definition": "assurance-obligation-definition",
+    "assurance_obligation_registry": "assurance-obligation-registry",
+    "root_surface_index": "generated-root-surface-index",
+    "successor_proposal_source": "successor-design-proposal-source",
+    "successor_proposal": "successor-design-proposal",
+    "successor_proposal_registry": "successor-proposal-registry",
+    "bootstrap_state": "bootstrap-state",
+    "repository_structure_configuration": "repository-structure-configuration",
+    "repository_structure_binding": "repository-structure-binding",
+    "assurance_realization_data": "assurance-realization-data",
+    "governance_realization_data": "governance-realization-data"
+  },
+  "roles": {
+    "assertion": "assertion"
+  },
+  "source_paths": {
+    "model": "repo/bootstrap/data/model.json",
+    "generation_semantics": "repo/bootstrap/data/realization/generation_semantics.json",
+    "root_surface_index": "repo/bootstrap/data/root/index.json",
+    "successor_proposal_directory": "repo/bootstrap/data/proposals",
+    "bootstrap_state": "repo/bootstrap/data/state/bootstrap.json",
+    "assurance_realization": "repo/bootstrap/data/realization/assurance.json",
+    "governance_realization": "repo/bootstrap/data/realization/governance.json",
+    "conformance_realization": "repo/bootstrap/data/realization/conformance.json"
+  },
+  "output_paths": {
+    "requirements_registry": "repo/authority/requirements.json",
+    "conformance_correspondence": "repo/conformance/correspondence.json",
+    "conformance_assertions": "repo/conformance/assertions.json",
+    "assurance_correspondence": "repo/assurance/correspondence.json",
+    "assurance_obligations": "repo/assurance/obligations.json",
+    "successor_proposal_directory": "repo/proposals",
+    "successor_proposal_registry": "repo/proposals/registry.json",
+    "bootstrap_state": "repo/state/bootstrap.json",
+    "repository_structure_binding": "repo/state/repository-structure-binding.json"
+  },
+  "required_fields": {
+    "successor_proposal_source": [
+      "schema_version",
+      "record_type",
+      "source_role",
+      "proposal_id",
+      "slug",
+      "title",
+      "order",
+      "lifecycle_state",
+      "bootstrap_provenance",
+      "authority_state",
+      "reconstruction_dependencies",
+      "predecessor_id",
+      "successor_id",
+      "source_provenance",
+      "content"
+    ],
+    "successor_source_provenance": [
+      "repository",
+      "revision",
+      "path",
+      "blob_sha"
+    ],
+    "bootstrap_state": [
+      "schema_version",
+      "record_type",
+      "state",
+      "bootstrap_provenance_issue",
+      "accepted_ref",
+      "cutover_timestamp"
+    ],
+    "repository_structure_configuration": [
+      "schema_version",
+      "record_type",
+      "configuration_id",
+      "objects"
+    ]
+  },
+  "enumerations": {
+    "repository_structure_object_type": [
+      "file",
+      "directory",
+      "symlink"
+    ],
+    "repository_structure_presence": [
+      "required",
+      "permitted"
+    ],
+    "repository_structure_descendants": [
+      "closed",
+      "complete-subtree"
+    ]
+  },
+  "bootstrap_lifecycle": {
+    "initial_state": "candidate",
+    "transitions": {
+      "candidate": [
+        "candidate",
+        "cutover"
+      ],
+      "cutover": [
+        "cutover"
+      ]
+    }
+  },
+  "default_artifact_mode": "0644"
+}

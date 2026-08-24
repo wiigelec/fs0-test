@@ -1,0 +1,127 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-GOVERNANCE",
+  "requirements": [
+    {
+      "id": "FS0-GOV-001",
+      "statement": "FS0 Governance SHALL implement Design Proposal -> Design -> Plan -> Build -> accepted repository state.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-002",
+      "statement": "Design SHALL use Audit, Normalize, Accept; Plan SHALL use Analyze, Specify, Accept; Build SHALL use Implement, Verify, Accept.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-003",
+      "statement": "Each governed Design, Plan, and Build work item SHALL record stable identity, predecessor, scope, material exclusions where applicable, candidate result, completion conditions, disposition, provenance, and bounded_authorization containing acceptance_actor.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-004",
+      "statement": "Design SHALL consume a non-authoritative Design Proposal.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-005",
+      "statement": "Plan SHALL consume accepted Design authority and define realization intent covering affected artifacts, Conformance work, Assurance work, dependencies, sequencing, and bounded Build scope.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-006",
+      "statement": "Build SHALL consume an accepted Plan and implement only work authorized by that Plan.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-007",
+      "statement": "Semantic defects SHALL route to Design, realization-intent defects to Plan, and implementation defects to Build.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-008",
+      "statement": "Governance acceptance SHALL be explicit, attributable, traceable, candidate-specific, and realized by an authorized merge of an eligible governed pull request.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-009",
+      "statement": "A Governance acceptance decision SHALL depend only on authority accepted before the candidate acquires authority produced by that acceptance.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-010",
+      "statement": "A governed work item SHALL authorize only its explicit scope.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-011",
+      "statement": "Each governed pull request SHALL identify exactly one governed-work issue; one governed-work issue MAY be realized through one or more pull requests.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-012",
+      "statement": "A governed pull request MAY contain one or more commits; acceptance applies to the complete current pull-request candidate change set.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-013",
+      "statement": "Required Conformance and Assurance SHALL gate merge eligibility for the complete current governed pull-request candidate.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-014",
+      "statement": "Bootstrap acceptance SHALL be the authorized merge of the designated bootstrap-cutover pull request after passing bootstrap mechanical validation.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-015",
+      "statement": "A merge candidate SHALL retain the exact accepted predecessor identities it depends on and SHALL be reevaluated if an applicable predecessor changes.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-016",
+      "statement": "After cutover, refs/heads/main SHALL identify the accepted repository state resulting from the most recent authorized governed pull-request merge.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-017",
+      "statement": "Closing, approval, workflow success, Conformance success, or Assurance findings SHALL NOT independently create acceptance; authorized merge of an eligible governed PR SHALL.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-018",
+      "statement": "Initial bootstrap SHALL use one dedicated provenance issue and one designated bootstrap-cutover pull request targeting refs/heads/main.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-019",
+      "statement": "For governed merge acceptance, the GitHub merge actor SHALL equal the governed issue bounded_authorization.acceptance_actor.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-020",
+      "statement": "After FS0 cutover, every persistent framework change SHALL occur through FS0 Governance.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

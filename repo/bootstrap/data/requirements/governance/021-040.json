@@ -1,0 +1,127 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-GOVERNANCE",
+  "requirements": [
+    {
+      "id": "FS0-GOV-021",
+      "statement": "Design Normalize SHALL identify materially compound obligations, ambiguity, contradiction, duplication, inappropriate implementation leakage, and missing semantic ownership.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-022",
+      "statement": "The installed proposal registry SHALL record proposal identity, order, installed path, lifecycle state, bootstrap provenance, authority state, reconstruction dependencies, and predecessor/successor identities where applicable.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-023",
+      "statement": "Bootstrap-installed seed proposal registry records SHALL use lifecycle state available, bootstrap provenance bootstrap-seed, and authority state none.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-024",
+      "statement": "The proposal registry SHALL let a fresh agent enumerate available unprocessed successor Design Proposals and reconstruction dependencies without chat history.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-025",
+      "statement": "After cutover, a bootstrap-installed seed proposal SHALL NOT be mutated in place.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-026",
+      "statement": "In the fixed FS0 GitHub binding, Design governed work SHALL use a GitHub issue.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-027",
+      "statement": "FS0 SHALL make current governed work and accepted realization intent machine-resolvable from repository and GitHub state without chat history.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-028",
+      "statement": "Design, Plan, and Build SHALL be represented as distinct governed work.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-029",
+      "statement": "Design SHALL audit accepted authority and relevant repository state.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-030",
+      "statement": "Design SHALL normalize persistent normative semantics into identified requirements.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-031",
+      "statement": "Design acceptance SHALL be realized by authorized merge of an eligible Design pull request associated with its governed Design issue.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-032",
+      "statement": "Plan SHALL NOT create or amend normative semantics.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-033",
+      "statement": "Build SHALL produce required evidence, invoke required Conformance, perform required semantic audit, and continue governed work rather than merge when that audit is adverse.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-034",
+      "statement": "Build SHALL NOT invent Design semantics or Plan intent.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-035",
+      "statement": "Governance acceptance SHALL be authorized merge of the exact conforming governed pull request after semantic audit; that merge SHALL also record candidate Assurance satisfaction.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-036",
+      "statement": "Completion or acceptance of governed work SHALL NOT independently authorize unrelated or successor work.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-037",
+      "statement": "refs/heads/main SHALL change accepted repository state only through an authorized merge of an eligible governed pull request.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-038",
+      "statement": "The external bootstrap provenance issue SHALL anchor exactly one designated bootstrap-cutover acceptance pull request and SHALL NOT be FS0-governed work.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-039",
+      "statement": "Privileged mutation SHALL remain bounded by accepted authority, accepted Plan, and authorized Build scope.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-040",
+      "statement": "No bootstrap-only mechanism SHALL independently create accepted framework state after cutover.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

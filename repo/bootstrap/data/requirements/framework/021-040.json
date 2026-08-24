@@ -1,0 +1,127 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-FRAMEWORK",
+  "requirements": [
+    {
+      "id": "FS0-FC-021",
+      "statement": "Generated artifacts SHALL remain semantically distinct from non-authoritative bootstrap maintenance source and SHALL require structural authorization at their configured locations.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-022",
+      "statement": "FS0 SHALL expose exactly one canonical bootstrap invocation surface that is machine-resolvable from repository state.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-023",
+      "statement": "The canonical bootstrap invocation surface SHALL contain only invocation concerns and delegate substantive behavior to separately identified implementation.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-024",
+      "statement": "Once copied into the target repository, the bootstrap payload SHALL require no semantic, template, generator, or script input from the originating bootstrap environment.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-025",
+      "statement": "Bootstrap SHALL install the complete successor repo-spec Design Proposal seed set before cutover.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-026",
+      "statement": "Each installed successor Design Proposal SHALL have one canonical structured read representation.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-027",
+      "statement": "After cutover, authoritative determination SHALL use accepted authoritative read surfaces and SHALL NOT use non-authoritative bootstrap maintenance source as fallback authority.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-028",
+      "statement": "FS0 SHALL retain one machine-resolvable non-authoritative bootstrap maintenance-source and generation role after cutover.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-029",
+      "statement": "Exactly one canonical repository-structure configuration SHALL be the sole instance-level source of filesystem permission beneath the repository root.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-030",
+      "statement": "A present filesystem object beneath the repository root without applicable positive structural authorization SHALL cause Conformance failure.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-031",
+      "statement": "The bootstrap lifecycle SHALL permit only candidate -> cutover and no reverse transition.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-032",
+      "statement": "After cutover, bootstrap maintenance machinery SHALL NOT independently authorize mutation or create acceptance.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-033",
+      "statement": "After cutover, FS0 SHALL complete bounded self-change through accepted authority, candidate publication, Conformance, Assurance, explicit acceptance, and accepted-state publication without the external bootstrap environment.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-034",
+      "statement": "Every FS0 JSON record SHALL contain schema_version and record_type.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-035",
+      "statement": "Each FS0 authority record SHALL contain schema_version, record_type authority, authority_id, title, owner, lifecycle_state, dependencies, delegates, requirements, and provenance.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-036",
+      "statement": "Each installed requirement record SHALL contain requirement_id, owner_authority_id, statement, lifecycle_state, lineage where applicable, conformance_applicability, and assurance_applicability.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-037",
+      "statement": "FS0 SHALL maintain one machine-resolvable bootstrap state record containing lifecycle state, bootstrap provenance issue when established, accepted ref, and cutover timestamp when established.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-038",
+      "statement": "The canonical repository-orientation surface SHALL state repository purpose, bootstrap/cutover status, Design Proposal discovery, accepted-state discovery, operation guidance, and limits on implementation/GitHub authority.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-039",
+      "statement": "The canonical agent-orientation surface SHALL state initial reading order, Design-chunk discovery, bootstrap/cutover-state discovery, and accepted-state resolution after cutover.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-040",
+      "statement": "Bootstrap verification SHALL fail if any required generated orientation or license surface is absent.",
+      "c": "mechanical",
+      "a": "none"
+    }
+  ]
+}

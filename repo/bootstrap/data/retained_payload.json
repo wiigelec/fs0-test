@@ -1,0 +1,47 @@
+{
+  "schema_version": "1",
+  "record_type": "retained-bootstrap-payload-policy",
+  "payload_root": "repo/bootstrap",
+  "required_capabilities": [
+    "construct",
+    "verify",
+    "accept",
+    "cut-over",
+    "maintain"
+  ],
+  "payload_classes": [
+    {
+      "path_prefix": "repo/bootstrap/design/",
+      "role": "design-input",
+      "required_for": [
+        "construct",
+        "verify",
+        "accept",
+        "cut-over",
+        "maintain"
+      ]
+    },
+    {
+      "path_prefix": "repo/bootstrap/data/",
+      "role": "canonical-realization-input",
+      "required_for": [
+        "construct",
+        "verify",
+        "accept",
+        "cut-over",
+        "maintain"
+      ]
+    },
+    {
+      "path_prefix": "repo/bootstrap/scripts/",
+      "role": "implementation",
+      "required_for": [
+        "construct",
+        "verify",
+        "accept",
+        "cut-over",
+        "maintain"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "record_type": "fs0-generation-semantics",
+  "successor_proposals": {
+    "source_role": "successor-design-proposal",
+    "required_lifecycle_state": "available",
+    "required_bootstrap_provenance": "bootstrap-seed",
+    "required_authority_state": "none",
+    "selection_policy": "lowest-order available proposal whose reconstruction dependencies are processed"
+  },
+  "bootstrap_state": {
+    "allowed_states": [
+      "candidate",
+      "cutover"
+    ],
+    "accepted_ref": "refs/heads/main"
+  }
+}

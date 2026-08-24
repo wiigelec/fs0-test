@@ -1,0 +1,36 @@
+{
+  "schema_version": "1",
+  "record_type": "authority",
+  "authority_id": "FS0-AUTH-ASSURANCE",
+  "title": "FS0 Assurance",
+  "owner": "FS0-AUTH-FRAMEWORK",
+  "lifecycle_state": "accepted",
+  "dependencies": [
+    "FS0-AUTH-FRAMEWORK"
+  ],
+  "delegates": [],
+  "requirements": [
+    "FS0-ASSUR-001",
+    "FS0-ASSUR-002",
+    "FS0-ASSUR-003",
+    "FS0-ASSUR-004",
+    "FS0-ASSUR-005",
+    "FS0-ASSUR-006",
+    "FS0-ASSUR-007",
+    "FS0-ASSUR-008",
+    "FS0-ASSUR-009",
+    "FS0-ASSUR-010",
+    "FS0-ASSUR-011",
+    "FS0-ASSUR-012",
+    "FS0-ASSUR-013",
+    "FS0-ASSUR-014",
+    "FS0-ASSUR-015"
+  ],
+  "provenance": {
+    "kind": "bootstrap-design-normalization",
+    "design_inputs": [
+      "repo/bootstrap/design/fs0-conformance-assurance.md",
+      "repo/bootstrap/design/fs0-authority-governance.md"
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-FRAMEWORK",
+  "requirements": [
+    {
+      "id": "FS0-FC-001",
+      "statement": "The authoritative framework namespace SHALL have one machine-resolvable identity whose concrete filesystem placement is defined by repository configuration.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-002",
+      "statement": "FS0 SHALL contain exactly one foundational Framework Contract authority.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-003",
+      "statement": "The Framework Contract SHALL explicitly delegate to Governance, Conformance, and Assurance.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-004",
+      "statement": "Every accepted authority SHALL have a stable machine-resolvable identity.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-005",
+      "statement": "Every independently governed semantic invariant SHALL have exactly one controlling normative authority owner.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-006",
+      "statement": "Every filesystem object beneath the repository root SHALL require applicable positive authorization from the canonical repository-structure configuration.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-007",
+      "statement": "Implementation, validation output, review findings, generated artifacts, workflow convention, historical state, product behavior, and technical write capability SHALL NOT independently create normative authority.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-008",
+      "statement": "Normative authority dependencies SHALL be acyclic.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-009",
+      "statement": "Every maintained derived framework primitive SHALL have resolvable provenance to accepted normative authority.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-010",
+      "statement": "Each accepted normative obligation SHALL be represented by an identified requirement with owner, statement, lifecycle state, lineage where applicable, and Conformance and Assurance applicability.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-011",
+      "statement": "Bootstrap SHALL initialize the target Git repository when absent and create the first local commit containing the complete initial FS0 candidate; bootstrap SHALL NOT create the GitHub repository, publish remote state, or establish user credentials.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-012",
+      "statement": "Before local bootstrap mutation, bootstrap SHALL verify required local Git and execution capabilities; GitHub remote, authentication, network, and publication capabilities SHALL NOT be prerequisites to construction of the initial local FS0 candidate.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-013",
+      "statement": "The operating substrate SHALL provide Git operations, authenticated GitHub API access, HTTPS/TLS and name resolution, maintained-script execution, remote Conformance evidence retrieval, and accepted-state publication.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-014",
+      "statement": "Authentication secrets, tokens, private keys, and equivalent credentials SHALL remain external to repository-maintained state.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-015",
+      "statement": "GitHub SHALL be the required initial FS0 operating platform.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-016",
+      "statement": "FS0 SHALL support repository read/write; Git ref read/create/update; issue and pull-request operations; workflow/check and commit/status reads; event-driven workflow execution; and authenticated actor resolution.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-017",
+      "statement": "Bootstrap SHALL generate the required repository-orientation and license surfaces at configuration-authorized locations.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-018",
+      "statement": "Canonical repository-orientation surfaces SHALL remain subordinate operational surfaces and SHALL NOT become independent semantic owners.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-019",
+      "statement": "The bootstrap prototype and initial installed FS0 SHALL use GNU General Public License version 3 unless later accepted Governance changes that decision where legally permitted.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-020",
+      "statement": "The retained bootstrap payload SHALL contain only Design input, canonical realization inputs, and implementation required to construct, verify, accept, cut over, and maintain FS0.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

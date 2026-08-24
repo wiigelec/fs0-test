@@ -1,0 +1,31 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-CONFORMANCE",
+  "requirements": [
+    {
+      "id": "FS0-CONF-025",
+      "statement": "Repository-structure Conformance SHALL evaluate the actual filesystem namespace beneath the repository root rather than only tracked, maintained, generated, or preclassified objects.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-CONF-026",
+      "statement": "For every observed filesystem object beneath the repository root, Conformance SHALL resolve applicable structural authorization.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-CONF-027",
+      "statement": "For every repository-structure configuration entry requiring presence, Conformance SHALL verify that the required filesystem object exists.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-CONF-028",
+      "statement": "Repository-structure Conformance SHALL fail when governed state does not determine exactly one canonical structure-configuration identity or that identity does not resolve to exactly one configuration object.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

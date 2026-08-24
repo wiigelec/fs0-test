@@ -1,0 +1,121 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-FRAMEWORK",
+  "requirements": [
+    {
+      "id": "FS0-FC-061",
+      "statement": "The canonical agent-orientation surface SHALL prohibit treating technical write capability as authority, require exact candidate/evidence inspection before mutation, and require post-cutover persistent framework mutation to route through Governance.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-062",
+      "statement": "FS0 SHALL NOT infer that one GitHub/repository state class has another state class's semantics merely because the states coincide.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-063",
+      "statement": "Canonical bootstrap maintenance data SHALL provide the maintained source required to derive FS0 artifacts.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-064",
+      "statement": "Successor Design Proposal source data SHALL remain machine-resolvably identifiable as a distinct canonical bootstrap source role.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-065",
+      "statement": "Bootstrap-created maintained artifacts SHALL be generated from canonical maintenance data by separately identified generator implementation.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-066",
+      "statement": "Generated FS0 read and operating surfaces SHALL NOT be independently maintained as canonical source.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-067",
+      "statement": "Generation SHALL be deterministic for identical canonical inputs and explicitly declared variable inputs.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-068",
+      "statement": "FS0 SHALL have one machine-resolvable canonical maintenance-data source role for generated FS0 artifacts.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-069",
+      "statement": "FS0 semantic and realization choices required for generation SHALL be represented in canonical maintenance data rather than embedded in generator code.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-070",
+      "statement": "Generator code SHALL NOT independently define FS0 normative semantics.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-071",
+      "statement": "The FS0 generation source registry SHALL remain non-authoritative maintenance metadata.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-072",
+      "statement": "Bootstrap source SHALL NOT replace an accepted generated read surface as authority when source and read surface disagree.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-073",
+      "statement": "Post-cutover FS0 maintenance that modifies bootstrap source SHALL occur only through Governance-authorized work.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-074",
+      "statement": "Each uniquely identified normative requirement SHALL express exactly one primary normative obligation.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-075",
+      "statement": "Each normative requirement statement SHALL contain no more than 300 characters.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-076",
+      "statement": "Material normative semantics SHALL NOT be omitted solely to satisfy the requirement-statement length bound.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-077",
+      "statement": "Generated FS0 read surfaces SHALL be produced from canonical maintenance data by the identified generation implementation.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-078",
+      "statement": "Every bootstrap-created maintained FS0 generated artifact SHALL be reproducible from its canonical maintenance data and identified generation implementation.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-079",
+      "statement": "Each generated successor Design Proposal artifact SHALL be reproducible from canonical proposal source data and identified generation implementation.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

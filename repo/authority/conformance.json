@@ -1,0 +1,48 @@
+{
+  "schema_version": "1",
+  "record_type": "authority",
+  "authority_id": "FS0-AUTH-CONFORMANCE",
+  "title": "FS0 Conformance",
+  "owner": "FS0-AUTH-FRAMEWORK",
+  "lifecycle_state": "accepted",
+  "dependencies": [
+    "FS0-AUTH-FRAMEWORK"
+  ],
+  "delegates": [],
+  "requirements": [
+    "FS0-CONF-001",
+    "FS0-CONF-002",
+    "FS0-CONF-003",
+    "FS0-CONF-004",
+    "FS0-CONF-005",
+    "FS0-CONF-007",
+    "FS0-CONF-008",
+    "FS0-CONF-009",
+    "FS0-CONF-010",
+    "FS0-CONF-011",
+    "FS0-CONF-013",
+    "FS0-CONF-014",
+    "FS0-CONF-015",
+    "FS0-CONF-016",
+    "FS0-CONF-017",
+    "FS0-CONF-018",
+    "FS0-CONF-019",
+    "FS0-CONF-020",
+    "FS0-CONF-021",
+    "FS0-CONF-022",
+    "FS0-CONF-023",
+    "FS0-CONF-024",
+    "FS0-CONF-025",
+    "FS0-CONF-026",
+    "FS0-CONF-027",
+    "FS0-CONF-028",
+    "FS0-CONF-029"
+  ],
+  "provenance": {
+    "kind": "bootstrap-design-normalization",
+    "design_inputs": [
+      "repo/bootstrap/design/fs0-conformance-assurance.md",
+      "repo/bootstrap/design/fs0-installed-layout.md"
+    ]
+  }
+}

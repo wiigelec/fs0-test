@@ -1,0 +1,27 @@
+{
+  "schema_version": "1",
+  "record_type": "conformance-primitive-provenance",
+  "evidence_authority_requirement_ids": [
+    "FS0-CONF-007",
+    "FS0-CONF-009"
+  ],
+  "orchestration_authority_requirement_ids": [
+    "FS0-CONF-008",
+    "FS0-CONF-010",
+    "FS0-CONF-014",
+    "FS0-CONF-016"
+  ],
+  "generation_correspondence": {
+    "canonical_input_root": "repo/bootstrap/data",
+    "generation_implementation": "repo/bootstrap/scripts/src/generate.py",
+    "check_entrypoint": "repo/bootstrap/scripts/bootstrap --check"
+  },
+  "post_cutover_policy": {
+    "canonical_surface": {
+      "entrypoint": "repo/conformance/run.py",
+      "public_wrapper": "repo/scripts/validate",
+      "github_workflow": ".github/workflows/fs0-conformance.yml"
+    },
+    "mutation_requires_governance": true
+  }
+}

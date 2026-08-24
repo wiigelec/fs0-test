@@ -1,0 +1,109 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-FRAMEWORK",
+  "requirements": [
+    {
+      "id": "FS0-FC-080",
+      "statement": "Absence of applicable structural authorization for a filesystem object beneath the repository root SHALL mean deny.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-081",
+      "statement": "No version-control, ignored, generated, cached, temporary, editor, build, tool, or runtime filesystem class SHALL receive implicit structural authorization.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-082",
+      "statement": "Governed repository state SHALL determine exactly one canonical repository-structure configuration identity for the validation subject.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-083",
+      "statement": "The operating substrate SHALL resolve the governed repository-structure configuration identity and SHALL NOT select among candidate configurations.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-084",
+      "statement": "Caller preference, environment convention, implementation default, filename convention, search order, or fallback location SHALL NOT determine the canonical repository-structure configuration identity.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-085",
+      "statement": "The canonical repository-structure configuration SHALL positively authorize its own filesystem object.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-086",
+      "statement": "Repository-structure authorization SHALL distinguish required presence from permitted presence.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-087",
+      "statement": "Authorizing a directory SHALL authorize only that directory object unless complete-subtree authorization is explicit.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-088",
+      "statement": "Complete-subtree authorization SHALL authorize descendant paths without requiring individual descendant path declarations.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-089",
+      "statement": "Complete-subtree authorization SHALL NOT override repository-wide structural invariants, including object-type admissibility.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-090",
+      "statement": "Repository-structure authorization SHALL support ordinary files, directories, and symbolic links as explicit object types.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-091",
+      "statement": "A filesystem object type unsupported by canonical repository-structure configuration semantics SHALL be denied.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-092",
+      "statement": "A symbolic link SHALL be structurally authorized as the link object itself.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-093",
+      "statement": "Repository-structure traversal SHALL NOT follow symbolic-link targets to discover descendants.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-094",
+      "statement": "A symbolic-link target outside the repository root SHALL NOT enlarge the repository-structure governance boundary.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-095",
+      "statement": "Bootstrap creation of a candidate filesystem object SHALL NOT independently grant structural authorization.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-096",
+      "statement": "After candidate creation, bootstrap conventions, hard-coded paths, generator destination lists, and tool defaults SHALL NOT substitute for structural authorization.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

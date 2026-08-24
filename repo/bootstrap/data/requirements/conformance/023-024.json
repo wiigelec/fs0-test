@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-CONFORMANCE",
+  "requirements": [
+    {
+      "id": "FS0-CONF-023",
+      "statement": "A failed generation-correspondence check SHALL produce a Conformance defect.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-024",
+      "statement": "Conformance SHALL reject a normative requirement statement longer than 300 characters.",
+      "c": "mechanical",
+      "a": "none"
+    }
+  ]
+}

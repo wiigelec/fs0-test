@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "record_type": "authority-source",
+  "id": "FS0-AUTH-FRAMEWORK",
+  "title": "FS0 Framework Contract",
+  "dependencies": [],
+  "delegates": [
+    "FS0-AUTH-GOVERNANCE",
+    "FS0-AUTH-CONFORMANCE",
+    "FS0-AUTH-ASSURANCE"
+  ],
+  "provenance": {
+    "kind": "bootstrap-design-normalization",
+    "design_inputs": [
+      "repo/bootstrap/design/fs0-design.md",
+      "repo/bootstrap/design/fs0-authority-governance.md",
+      "repo/bootstrap/design/fs0-operating-substrate.md",
+      "repo/bootstrap/design/fs0-github.md",
+      "repo/bootstrap/design/fs0-installed-layout.md",
+      "repo/bootstrap/design/fs0-self-hosting.md"
+    ]
+  }
+}

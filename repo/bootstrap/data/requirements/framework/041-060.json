@@ -1,0 +1,127 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-FRAMEWORK",
+  "requirements": [
+    {
+      "id": "FS0-FC-041",
+      "statement": "FS0 SHALL distinguish repository content, desired GitHub operating state, observed GitHub state, authorized mutation, and verified resulting state.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-042",
+      "statement": "Canonical bootstrap source roles SHALL keep FS0 realization input semantically distinct from successor Design Proposal input.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-043",
+      "statement": "Governance, Conformance, and Assurance SHALL be the only authority-bearing keystones delegated by the Framework Contract.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-044",
+      "statement": "No FS0 authority record SHALL acquire keystone authority implicitly.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-045",
+      "statement": "Every accepted normative requirement SHALL have a stable machine-resolvable identity.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-046",
+      "statement": "A missing bootstrap prerequisite SHALL stop bootstrap with a clear error before mutation.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-047",
+      "statement": "GitHub mechanisms SHALL remain subordinate realizations and SHALL NOT define Governance, Conformance, or Assurance semantics.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-048",
+      "statement": "Generated repository-orientation and license surfaces SHALL be deterministic for identical canonical inputs except explicitly declared variable installation-state fields.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-049",
+      "statement": "Repository-orientation surfaces SHALL NOT become independent semantic owners.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-050",
+      "statement": "Substantive bootstrap implementation SHALL be machine-resolvably distinct from the canonical bootstrap invocation surface.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-051",
+      "statement": "Every bootstrap-installed successor Design Proposal seed SHALL have authority state none.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-052",
+      "statement": "Each generated successor Design Proposal Markdown surface SHALL be a deterministic projection of its canonical structured proposal read representation.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-053",
+      "statement": "Generated proposal Markdown SHALL NOT become an independent semantic owner.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-FC-054",
+      "statement": "Post-cutover FS0 SHALL require no semantic, template, generator, or script input from an external bootstrap environment.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-055",
+      "statement": "The repository root SHALL be the complete structural governance boundary; no filesystem namespace beneath it SHALL remain outside structural governance.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-056",
+      "statement": "Authority lifecycle_state SHALL support accepted, superseded, and withdrawn.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-057",
+      "statement": "Requirement conformance_applicability SHALL be mechanical or none.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-058",
+      "statement": "Requirement assurance_applicability SHALL be required or none.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-059",
+      "statement": "Bootstrap state SHALL be candidate or cutover.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-FC-060",
+      "statement": "After cutover, the bootstrap cutover record SHALL be immutable except through later accepted authority that explicitly governs recovery or reconstruction.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

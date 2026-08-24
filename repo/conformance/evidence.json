@@ -1,0 +1,326 @@
+{
+  "schema_version": "1",
+  "record_type": "conformance-evidence-registry",
+  "evidence": [
+    {
+      "evidence_id": "FS0-EVIDENCE-REQUIREMENT-METADATA",
+      "implementation_id": "FS0-IMPL-REQUIREMENT-METADATA",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CONFORMANCE-CLOSURE",
+      "implementation_id": "FS0-IMPL-CONFORMANCE-CLOSURE",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-GENERATION-CORRESPONDENCE",
+      "implementation_id": "FS0-IMPL-GENERATION-CORRESPONDENCE",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CANONICAL-ENTRYPOINT",
+      "implementation_id": "FS0-IMPL-CANONICAL-ENTRYPOINT",
+      "evidence_class": "repository-state",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-REMOTE-EXECUTION",
+      "implementation_id": "FS0-IMPL-REMOTE-EXECUTION",
+      "evidence_class": "repository-state",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-EXACT-CANDIDATE",
+      "implementation_id": "FS0-IMPL-EXACT-CANDIDATE",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-BOOTSTRAP-STATE",
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-STATE",
+      "evidence_class": "repository-state",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-GOVERNANCE-STATE-RESOLUTION",
+      "implementation_id": "FS0-IMPL-GOVERNANCE-STATE-RESOLUTION",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-REPOSITORY-STRUCTURE",
+      "implementation_id": "FS0-IMPL-REPOSITORY-STRUCTURE",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-ASSURANCE-RUNTIME",
+      "implementation_id": "FS0-IMPL-ASSURANCE-RUNTIME",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-SUCCESSOR-PROPOSAL-REGISTRY",
+      "implementation_id": "FS0-IMPL-SUCCESSOR-PROPOSAL-REGISTRY",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-GOVERNED-WORK-KERNEL",
+      "implementation_id": "FS0-IMPL-GOVERNED-WORK-KERNEL",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-GITHUB-GOVERNANCE-BINDING",
+      "implementation_id": "FS0-IMPL-GITHUB-GOVERNANCE-BINDING",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-PROPOSAL-LINEAGE",
+      "implementation_id": "FS0-IMPL-PROPOSAL-LINEAGE",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CONFORMANCE-SELFTEST",
+      "implementation_id": "FS0-IMPL-CONFORMANCE-SELFTEST",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CONFORMANCE-CANONICALITY",
+      "implementation_id": "FS0-IMPL-CONFORMANCE-CANONICALITY",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-GENERATION-CONTRACT",
+      "implementation_id": "FS0-IMPL-GENERATION-CONTRACT",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-AUTHORITY-KERNEL",
+      "implementation_id": "FS0-IMPL-AUTHORITY-KERNEL",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-REQUIREMENT-PROVENANCE",
+      "implementation_id": "FS0-IMPL-REQUIREMENT-PROVENANCE",
+      "evidence_class": "repository-state",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-OPERATING-SUBSTRATE-PREFLIGHT",
+      "implementation_id": "FS0-IMPL-OPERATING-SUBSTRATE-PREFLIGHT",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-BOOTSTRAP-READ-SURFACES",
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-READ-SURFACES",
+      "evidence_class": "repository-state",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-FRAMEWORK-RECORD-ORIENTATION",
+      "implementation_id": "FS0-IMPL-FRAMEWORK-RECORD-ORIENTATION",
+      "evidence_class": "repository-state",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-BOOTSTRAP-INDEPENDENCE",
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-INDEPENDENCE",
+      "evidence_class": "repository-state",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-BOOTSTRAP-AUTHORITY-LIFECYCLE",
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-AUTHORITY-LIFECYCLE",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-POST-CUTOVER-MUTATION-AUTHORITY",
+      "implementation_id": "FS0-IMPL-POST-CUTOVER-MUTATION-AUTHORITY",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-POST-CUTOVER-MUTATION-BINDING",
+      "implementation_id": "FS0-IMPL-POST-CUTOVER-MUTATION-BINDING",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-RETAINED-BOOTSTRAP-PAYLOAD",
+      "implementation_id": "FS0-IMPL-RETAINED-BOOTSTRAP-PAYLOAD",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-JSON-RECORD-ENVELOPES",
+      "implementation_id": "FS0-IMPL-JSON-RECORD-ENVELOPES",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-STATE-CLASS-DISTINCTION",
+      "implementation_id": "FS0-IMPL-STATE-CLASS-DISTINCTION",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CUTOVER-RECORD-IMMUTABILITY",
+      "implementation_id": "FS0-IMPL-CUTOVER-RECORD-IMMUTABILITY",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CANONICAL-GENERATION-SEMANTICS",
+      "implementation_id": "FS0-IMPL-CANONICAL-GENERATION-SEMANTICS",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-SELF-CHANGE-COMPLETION",
+      "implementation_id": "FS0-IMPL-SELF-CHANGE-COMPLETION",
+      "evidence_class": "execution-result",
+      "role": "evidence",
+      "authority_requirement_ids": [
+        "FS0-CONF-007",
+        "FS0-CONF-009"
+      ]
+    }
+  ]
+}

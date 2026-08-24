@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "record_type": "authority-source",
+  "id": "FS0-AUTH-ASSURANCE",
+  "title": "FS0 Assurance",
+  "dependencies": [
+    "FS0-AUTH-FRAMEWORK"
+  ],
+  "delegates": [],
+  "owner": "FS0-AUTH-FRAMEWORK",
+  "provenance": {
+    "kind": "bootstrap-design-normalization",
+    "design_inputs": [
+      "repo/bootstrap/design/fs0-conformance-assurance.md",
+      "repo/bootstrap/design/fs0-authority-governance.md"
+    ]
+  }
+}

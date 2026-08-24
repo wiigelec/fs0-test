@@ -1,0 +1,536 @@
+{
+  "schema_version": "1",
+  "record_type": "conformance-realization-data",
+  "implementations": [
+    {
+      "implementation_id": "FS0-IMPL-REQUIREMENT-METADATA",
+      "callable": "requirement_metadata",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-045",
+        "FS0-ASSERT-FC-056",
+        "FS0-ASSERT-FC-057",
+        "FS0-ASSERT-FC-058",
+        "FS0-ASSERT-FC-075",
+        "FS0-ASSERT-CONF-024"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-CONFORMANCE-CLOSURE",
+      "callable": "conformance_closure",
+      "assertion_ids": [
+        "FS0-ASSERT-CONF-001",
+        "FS0-ASSERT-CONF-004",
+        "FS0-ASSERT-CONF-013",
+        "FS0-ASSERT-CONF-015",
+        "FS0-ASSERT-CONF-018",
+        "FS0-ASSERT-CONF-019",
+        "FS0-ASSERT-CONF-003",
+        "FS0-ASSERT-CONF-005",
+        "FS0-ASSERT-CONF-007",
+        "FS0-ASSERT-CONF-002",
+        "FS0-ASSERT-CONF-008"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-GENERATION-CORRESPONDENCE",
+      "callable": "generation_correspondence",
+      "assertion_ids": [
+        "FS0-ASSERT-CONF-022",
+        "FS0-ASSERT-CONF-023",
+        "FS0-ASSERT-CONF-021"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-CANONICAL-ENTRYPOINT",
+      "callable": "canonical_entrypoint",
+      "assertion_ids": [
+        "FS0-ASSERT-CONF-016"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-REMOTE-EXECUTION",
+      "callable": "remote_execution",
+      "assertion_ids": [
+        "FS0-ASSERT-CONF-010",
+        "FS0-ASSERT-CONF-014"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-EXACT-CANDIDATE",
+      "callable": "exact_candidate",
+      "assertion_ids": [
+        "FS0-ASSERT-CONF-020"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-STATE",
+      "callable": "bootstrap_state",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-037",
+        "FS0-ASSERT-CONF-011"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-GOVERNANCE-STATE-RESOLUTION",
+      "callable": "governance_state_resolution",
+      "assertion_ids": [
+        "FS0-ASSERT-GOV-008",
+        "FS0-ASSERT-GOV-011",
+        "FS0-ASSERT-GOV-012",
+        "FS0-ASSERT-GOV-013",
+        "FS0-ASSERT-GOV-014",
+        "FS0-ASSERT-GOV-015",
+        "FS0-ASSERT-GOV-016",
+        "FS0-ASSERT-GOV-017",
+        "FS0-ASSERT-GOV-035",
+        "FS0-ASSERT-GOV-037"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-REPOSITORY-STRUCTURE",
+      "callable": "repository_structure",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-006",
+        "FS0-ASSERT-FC-029",
+        "FS0-ASSERT-FC-030",
+        "FS0-ASSERT-FC-055",
+        "FS0-ASSERT-FC-080",
+        "FS0-ASSERT-FC-081",
+        "FS0-ASSERT-FC-082",
+        "FS0-ASSERT-FC-083",
+        "FS0-ASSERT-FC-084",
+        "FS0-ASSERT-FC-085",
+        "FS0-ASSERT-FC-086",
+        "FS0-ASSERT-FC-087",
+        "FS0-ASSERT-FC-088",
+        "FS0-ASSERT-FC-089",
+        "FS0-ASSERT-FC-090",
+        "FS0-ASSERT-FC-091",
+        "FS0-ASSERT-FC-092",
+        "FS0-ASSERT-FC-093",
+        "FS0-ASSERT-FC-094",
+        "FS0-ASSERT-FC-095",
+        "FS0-ASSERT-FC-096",
+        "FS0-ASSERT-FC-097",
+        "FS0-ASSERT-FC-098",
+        "FS0-ASSERT-FC-099",
+        "FS0-ASSERT-CONF-025",
+        "FS0-ASSERT-CONF-026",
+        "FS0-ASSERT-CONF-027",
+        "FS0-ASSERT-CONF-028",
+        "FS0-ASSERT-CONF-029"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-ASSURANCE-RUNTIME",
+      "callable": "assurance_runtime",
+      "assertion_ids": [
+        "FS0-ASSERT-ASSUR-001",
+        "FS0-ASSERT-ASSUR-002",
+        "FS0-ASSERT-ASSUR-003",
+        "FS0-ASSERT-ASSUR-004",
+        "FS0-ASSERT-ASSUR-005",
+        "FS0-ASSERT-ASSUR-006",
+        "FS0-ASSERT-ASSUR-008",
+        "FS0-ASSERT-ASSUR-009",
+        "FS0-ASSERT-ASSUR-012",
+        "FS0-ASSERT-ASSUR-013",
+        "FS0-ASSERT-ASSUR-014"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-SUCCESSOR-PROPOSAL-REGISTRY",
+      "callable": "successor_proposal_registry",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-064",
+        "FS0-ASSERT-FC-079",
+        "FS0-ASSERT-GOV-022",
+        "FS0-ASSERT-GOV-023",
+        "FS0-ASSERT-GOV-024",
+        "FS0-ASSERT-GOV-025"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-GOVERNED-WORK-KERNEL",
+      "callable": "governed_work_kernel",
+      "assertion_ids": [
+        "FS0-ASSERT-GOV-001",
+        "FS0-ASSERT-GOV-002",
+        "FS0-ASSERT-GOV-003",
+        "FS0-ASSERT-GOV-004",
+        "FS0-ASSERT-GOV-005",
+        "FS0-ASSERT-GOV-006",
+        "FS0-ASSERT-GOV-010",
+        "FS0-ASSERT-GOV-028",
+        "FS0-ASSERT-GOV-031",
+        "FS0-ASSERT-GOV-033",
+        "FS0-ASSERT-GOV-036",
+        "FS0-ASSERT-GOV-049",
+        "FS0-ASSERT-GOV-050"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-GITHUB-GOVERNANCE-BINDING",
+      "callable": "github_governance_binding",
+      "assertion_ids": [
+        "FS0-ASSERT-GOV-018",
+        "FS0-ASSERT-GOV-026",
+        "FS0-ASSERT-GOV-027",
+        "FS0-ASSERT-GOV-038",
+        "FS0-ASSERT-GOV-040",
+        "FS0-ASSERT-GOV-042",
+        "FS0-ASSERT-GOV-043",
+        "FS0-ASSERT-GOV-044",
+        "FS0-ASSERT-GOV-045",
+        "FS0-ASSERT-GOV-046",
+        "FS0-ASSERT-GOV-047"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-PROPOSAL-LINEAGE",
+      "callable": "proposal_lineage",
+      "assertion_ids": [
+        "FS0-ASSERT-GOV-041"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-CONFORMANCE-SELFTEST",
+      "callable": "conformance_selftest",
+      "assertion_ids": [
+        "FS0-ASSERT-CONF-009"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-CONFORMANCE-CANONICALITY",
+      "callable": "conformance_canonicality",
+      "assertion_ids": [
+        "FS0-ASSERT-CONF-017"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-GENERATION-CONTRACT",
+      "callable": "generation_contract",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-065",
+        "FS0-ASSERT-FC-066",
+        "FS0-ASSERT-FC-067",
+        "FS0-ASSERT-FC-068",
+        "FS0-ASSERT-FC-073",
+        "FS0-ASSERT-FC-077",
+        "FS0-ASSERT-FC-078"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-AUTHORITY-KERNEL",
+      "callable": "authority_kernel",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-001",
+        "FS0-ASSERT-FC-002",
+        "FS0-ASSERT-FC-003",
+        "FS0-ASSERT-FC-004",
+        "FS0-ASSERT-FC-005",
+        "FS0-ASSERT-FC-008",
+        "FS0-ASSERT-FC-043"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-REQUIREMENT-PROVENANCE",
+      "callable": "requirement_provenance",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-009",
+        "FS0-ASSERT-FC-010"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-OPERATING-SUBSTRATE-PREFLIGHT",
+      "callable": "operating_substrate_preflight",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-011",
+        "FS0-ASSERT-FC-012",
+        "FS0-ASSERT-FC-013",
+        "FS0-ASSERT-FC-014",
+        "FS0-ASSERT-FC-016",
+        "FS0-ASSERT-FC-046"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-READ-SURFACES",
+      "callable": "bootstrap_read_surfaces",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-017",
+        "FS0-ASSERT-FC-019",
+        "FS0-ASSERT-FC-021",
+        "FS0-ASSERT-FC-022",
+        "FS0-ASSERT-FC-023",
+        "FS0-ASSERT-FC-025",
+        "FS0-ASSERT-FC-026",
+        "FS0-ASSERT-FC-038",
+        "FS0-ASSERT-FC-039",
+        "FS0-ASSERT-FC-040",
+        "FS0-ASSERT-FC-048",
+        "FS0-ASSERT-FC-050",
+        "FS0-ASSERT-FC-051",
+        "FS0-ASSERT-FC-052",
+        "FS0-ASSERT-FC-059",
+        "FS0-ASSERT-FC-063"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-FRAMEWORK-RECORD-ORIENTATION",
+      "callable": "framework_record_orientation",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-035",
+        "FS0-ASSERT-FC-036",
+        "FS0-ASSERT-FC-042",
+        "FS0-ASSERT-FC-061",
+        "FS0-ASSERT-FC-062"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-INDEPENDENCE",
+      "callable": "bootstrap_independence",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-024",
+        "FS0-ASSERT-FC-028",
+        "FS0-ASSERT-FC-054"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-AUTHORITY-LIFECYCLE",
+      "callable": "bootstrap_authority_lifecycle",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-027",
+        "FS0-ASSERT-FC-031"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-POST-CUTOVER-MUTATION-AUTHORITY",
+      "callable": "post_cutover_mutation_authority",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-032"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-POST-CUTOVER-MUTATION-BINDING",
+      "callable": "post_cutover_mutation_binding",
+      "assertion_ids": [
+        "FS0-ASSERT-GOV-020"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-RETAINED-BOOTSTRAP-PAYLOAD",
+      "callable": "retained_bootstrap_payload",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-020"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-JSON-RECORD-ENVELOPES",
+      "callable": "json_record_envelopes",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-034"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-STATE-CLASS-DISTINCTION",
+      "callable": "state_class_distinction",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-041"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-CUTOVER-RECORD-IMMUTABILITY",
+      "callable": "cutover_record_immutability",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-060"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-CANONICAL-GENERATION-SEMANTICS",
+      "callable": "generation_semantics_canonical",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-069",
+        "FS0-ASSERT-FC-070"
+      ]
+    },
+    {
+      "implementation_id": "FS0-IMPL-SELF-CHANGE-COMPLETION",
+      "callable": "self_change_completion",
+      "assertion_ids": [
+        "FS0-ASSERT-FC-033"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "FS0-EVIDENCE-REQUIREMENT-METADATA",
+      "implementation_id": "FS0-IMPL-REQUIREMENT-METADATA",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CONFORMANCE-CLOSURE",
+      "implementation_id": "FS0-IMPL-CONFORMANCE-CLOSURE",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-GENERATION-CORRESPONDENCE",
+      "implementation_id": "FS0-IMPL-GENERATION-CORRESPONDENCE",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CANONICAL-ENTRYPOINT",
+      "implementation_id": "FS0-IMPL-CANONICAL-ENTRYPOINT",
+      "evidence_class": "repository-state"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-REMOTE-EXECUTION",
+      "implementation_id": "FS0-IMPL-REMOTE-EXECUTION",
+      "evidence_class": "repository-state"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-EXACT-CANDIDATE",
+      "implementation_id": "FS0-IMPL-EXACT-CANDIDATE",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-BOOTSTRAP-STATE",
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-STATE",
+      "evidence_class": "repository-state"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-GOVERNANCE-STATE-RESOLUTION",
+      "implementation_id": "FS0-IMPL-GOVERNANCE-STATE-RESOLUTION",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-REPOSITORY-STRUCTURE",
+      "implementation_id": "FS0-IMPL-REPOSITORY-STRUCTURE",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-ASSURANCE-RUNTIME",
+      "implementation_id": "FS0-IMPL-ASSURANCE-RUNTIME",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-SUCCESSOR-PROPOSAL-REGISTRY",
+      "implementation_id": "FS0-IMPL-SUCCESSOR-PROPOSAL-REGISTRY",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-GOVERNED-WORK-KERNEL",
+      "implementation_id": "FS0-IMPL-GOVERNED-WORK-KERNEL",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-GITHUB-GOVERNANCE-BINDING",
+      "implementation_id": "FS0-IMPL-GITHUB-GOVERNANCE-BINDING",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-PROPOSAL-LINEAGE",
+      "implementation_id": "FS0-IMPL-PROPOSAL-LINEAGE",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CONFORMANCE-SELFTEST",
+      "implementation_id": "FS0-IMPL-CONFORMANCE-SELFTEST",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CONFORMANCE-CANONICALITY",
+      "implementation_id": "FS0-IMPL-CONFORMANCE-CANONICALITY",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-GENERATION-CONTRACT",
+      "implementation_id": "FS0-IMPL-GENERATION-CONTRACT",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-AUTHORITY-KERNEL",
+      "implementation_id": "FS0-IMPL-AUTHORITY-KERNEL",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-REQUIREMENT-PROVENANCE",
+      "implementation_id": "FS0-IMPL-REQUIREMENT-PROVENANCE",
+      "evidence_class": "repository-state"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-OPERATING-SUBSTRATE-PREFLIGHT",
+      "implementation_id": "FS0-IMPL-OPERATING-SUBSTRATE-PREFLIGHT",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-BOOTSTRAP-READ-SURFACES",
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-READ-SURFACES",
+      "evidence_class": "repository-state"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-FRAMEWORK-RECORD-ORIENTATION",
+      "implementation_id": "FS0-IMPL-FRAMEWORK-RECORD-ORIENTATION",
+      "evidence_class": "repository-state"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-BOOTSTRAP-INDEPENDENCE",
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-INDEPENDENCE",
+      "evidence_class": "repository-state"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-BOOTSTRAP-AUTHORITY-LIFECYCLE",
+      "implementation_id": "FS0-IMPL-BOOTSTRAP-AUTHORITY-LIFECYCLE",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-POST-CUTOVER-MUTATION-AUTHORITY",
+      "implementation_id": "FS0-IMPL-POST-CUTOVER-MUTATION-AUTHORITY",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-POST-CUTOVER-MUTATION-BINDING",
+      "implementation_id": "FS0-IMPL-POST-CUTOVER-MUTATION-BINDING",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-RETAINED-BOOTSTRAP-PAYLOAD",
+      "implementation_id": "FS0-IMPL-RETAINED-BOOTSTRAP-PAYLOAD",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-JSON-RECORD-ENVELOPES",
+      "implementation_id": "FS0-IMPL-JSON-RECORD-ENVELOPES",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-STATE-CLASS-DISTINCTION",
+      "implementation_id": "FS0-IMPL-STATE-CLASS-DISTINCTION",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CUTOVER-RECORD-IMMUTABILITY",
+      "implementation_id": "FS0-IMPL-CUTOVER-RECORD-IMMUTABILITY",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-CANONICAL-GENERATION-SEMANTICS",
+      "implementation_id": "FS0-IMPL-CANONICAL-GENERATION-SEMANTICS",
+      "evidence_class": "execution-result"
+    },
+    {
+      "evidence_id": "FS0-EVIDENCE-SELF-CHANGE-COMPLETION",
+      "implementation_id": "FS0-IMPL-SELF-CHANGE-COMPLETION",
+      "evidence_class": "execution-result"
+    }
+  ],
+  "orchestration": {
+    "orchestration_id": "FS0-ORCH-CANONICAL",
+    "entrypoint": "repo/conformance/run.py",
+    "public_wrapper": "repo/scripts/validate",
+    "mode": "candidate-bootstrap-verification"
+  },
+  "artifact_modes": {
+    "repo/conformance/run.py": "0755",
+    "repo/scripts/validate": "0755"
+  }
+}

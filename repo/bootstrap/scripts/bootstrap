@@ -1,0 +1,49 @@
+#!/bin/sh
+set -eu
+
+if [ ! -d repo/bootstrap/data ] || [ ! -f repo/bootstrap/scripts/src/generate.py ]; then
+    echo "FS0 bootstrap must be invoked from the target repository root" >&2
+    exit 2
+fi
+
+if ! command -v git >/dev/null 2>&1; then
+    echo "FS0 bootstrap prerequisite failed: required command not found: git" >&2
+    exit 2
+fi
+if ! command -v python3 >/dev/null 2>&1; then
+    echo "FS0 bootstrap prerequisite failed: required command not found: python3" >&2
+    exit 2
+fi
+
+if [ "${1:-}" = "--check" ]; then
+    exec python3 -B repo/bootstrap/scripts/src/generate.py "$@"
+fi
+
+initial_commit=0
+if ! git rev-parse --git-dir >/dev/null 2>&1; then
+    initial_commit=1
+elif ! git rev-parse --verify 'HEAD^{commit}' >/dev/null 2>&1; then
+    initial_commit=1
+fi
+
+if [ "$initial_commit" -eq 1 ]; then
+    python3 -B repo/bootstrap/scripts/src/preflight.py --initial-commit
+else
+    python3 -B repo/bootstrap/scripts/src/preflight.py
+fi
+
+if ! git rev-parse --git-dir >/dev/null 2>&1; then
+    git init >/dev/null
+fi
+
+python3 -B repo/bootstrap/data/realization/governance/bootstrap_mutation_guard.py >/dev/null
+python3 -B repo/bootstrap/scripts/src/generate.py "$@"
+
+if [ "$initial_commit" -eq 1 ]; then
+    mkdir -p user
+    if [ ! -e user/script-transfer-handoff.json ]; then
+        cp repo/bootstrap/data/root/script-transfer-handoff.json user/script-transfer-handoff.json
+    fi
+    git add -A
+    git commit -m "Bootstrap FS0"
+fi

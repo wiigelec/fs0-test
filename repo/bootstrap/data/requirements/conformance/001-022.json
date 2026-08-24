@@ -1,0 +1,127 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-CONFORMANCE",
+  "requirements": [
+    {
+      "id": "FS0-CONF-001",
+      "statement": "Every active accepted requirement SHALL have exactly one canonical Conformance correspondence declaring applicability mechanical or none.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-002",
+      "statement": "Every mechanically applicable requirement SHALL resolve through its canonical correspondence to at least one executable assertion with stable assertion identity.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-003",
+      "statement": "FS0 Conformance SHALL use assertion, support, evidence, and orchestration as its only required top-level primitive roles.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-004",
+      "statement": "Assertion identity SHALL remain distinct from implementation-callable identity.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-CONF-005",
+      "statement": "Every maintained Conformance primitive SHALL resolve to accepted normative authority.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-007",
+      "statement": "Every executable assertion SHALL produce or resolve the evidence required by FS0 Conformance authority.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-008",
+      "statement": "Every gating assertion SHALL be reachable from authorized canonical Conformance execution.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-009",
+      "statement": "FS0 Conformance evidence SHALL demonstrate conforming-state acceptance, targeted-violation rejection, and execution of required assertions.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-CONF-010",
+      "statement": "FS0 SHALL provide one canonical remotely runnable Conformance surface through GitHub Actions.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-011",
+      "statement": "Before cutover, execution of candidate Conformance machinery SHALL be bootstrap mechanical verification evidence only.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-CONF-013",
+      "statement": "Each installed Conformance correspondence record SHALL contain requirement_id, applicability, and assertion_ids.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-014",
+      "statement": "In the fixed FS0 GitHub binding, canonical Conformance execution SHALL use the repository GitHub Actions workflow.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-015",
+      "statement": "Multiple assertions MAY share one implementation only when assertion identities and provenance remain distinct.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-CONF-016",
+      "statement": "FS0 SHALL provide one machine-resolvable canonical repository Conformance execution entry point invoked by the fixed FS0 GitHub workflow.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-017",
+      "statement": "After cutover, the accepted Conformance execution surface SHALL be canonical unless later changed through Governance.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-CONF-018",
+      "statement": "A Conformance correspondence with applicability mechanical SHALL contain at least one stable assertion identity.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-019",
+      "statement": "A Conformance correspondence with applicability none SHALL contain an empty assertion_ids collection.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-020",
+      "statement": "Conformance evidence in the fixed FS0 GitHub binding SHALL be a workflow or check result tied to the exact candidate commit SHA.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-021",
+      "statement": "Every generated FS0 read surface SHALL be reproducible from its declared canonical maintenance inputs and identified generation implementation.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-CONF-022",
+      "statement": "Canonical Conformance SHALL compare generated FS0 read surfaces with deterministic regeneration from their declared canonical source inputs.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1",
+  "record_type": "fs0-bootstrap-model",
+  "authority_order": [
+    "framework",
+    "governance",
+    "conformance",
+    "assurance"
+  ],
+  "authority_defaults": {
+    "lifecycle_state": "accepted"
+  },
+  "requirement_defaults": {
+    "lifecycle_state": "accepted"
+  },
+  "requirement_constraints": {
+    "statement_max_chars": 300,
+    "conformance_applicability": [
+      "mechanical",
+      "none"
+    ],
+    "assurance_applicability": [
+      "required",
+      "none"
+    ]
+  },
+  "identity": {
+    "requirement_prefix": "FS0-",
+    "assertion": {
+      "prefix": "FS0-ASSERT-",
+      "derivation_kind": "canonical-requirement-coverage",
+      "derivation_policy": "Exactly one initial stable assertion identity is derived for each requirement with conformance_applicability=mechanical. This registry defines assertion identity and requirement provenance only. Implementation, evidence, and gating bindings are separate realization layers and are not inferred by identity derivation."
+    },
+    "obligation": {
+      "prefix": "FS0-OBL-",
+      "derivation_kind": "canonical-requirement-assurance",
+      "derivation_policy": "Exactly one initial stable review-obligation identity is derived for each requirement with assurance_applicability=required. Review cases instantiate obligations against governed subjects and evidence.",
+      "review_objective_template": "Determine whether the governed review subject satisfies {requirement_id} semantically using applicable FS0 Assurance review capabilities."
+    }
+  }
+}

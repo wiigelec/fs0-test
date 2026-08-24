@@ -1,0 +1,66 @@
+{
+  "schema_version": "1",
+  "record_type": "governance-realization-data",
+  "artifacts": [
+    {
+      "source": "governance/accepted_state.py",
+      "target": "repo/governance/accepted_state.py",
+      "mode": "0755"
+    },
+    {
+      "source": "governance/accepted-state",
+      "target": "repo/scripts/accepted-state",
+      "mode": "0755"
+    },
+    {
+      "source": "governance/publish_accepted.py",
+      "target": "repo/governance/publish_accepted.py",
+      "mode": "0755"
+    },
+    {
+      "source": "governance/publish-accepted",
+      "target": "repo/scripts/publish-accepted",
+      "mode": "0755"
+    },
+    {
+      "source": "governance/work.py",
+      "target": "repo/governance/work.py",
+      "mode": "0644"
+    },
+    {
+      "source": "governance/github_binding.py",
+      "target": "repo/governance/github_binding.py",
+      "mode": "0644"
+    },
+    {
+      "source": "governance/proposals.py",
+      "target": "repo/governance/proposals.py",
+      "mode": "0644"
+    },
+    {
+      "source": "governance/bootstrap_mutation_guard.py",
+      "target": "repo/governance/bootstrap_mutation_guard.py",
+      "mode": "0755"
+    },
+    {
+      "source": "governance/self_change.py",
+      "target": "repo/governance/self_change.py",
+      "mode": "0755"
+    },
+    {
+      "source": "governance/self-change",
+      "target": "repo/scripts/self-change",
+      "mode": "0755"
+    },
+    {
+      "source": "governance/bootstrap_cutover.py",
+      "target": "repo/governance/bootstrap_cutover.py",
+      "mode": "0755"
+    },
+    {
+      "source": "governance/bootstrap-cutover",
+      "target": "repo/scripts/bootstrap-cutover",
+      "mode": "0755"
+    }
+  ]
+}

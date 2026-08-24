@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-GOVERNANCE",
+  "requirements": [
+    {
+      "id": "FS0-GOV-049",
+      "statement": "A governed PR SHALL NOT be accepted unless its exact current head has passing Conformance and a satisfactory applicable semantic-audit receipt before authorized merge.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-050",
+      "statement": "A governed issue SHALL remain open until exact main has a satisfactory completion-audit receipt and relevant accepted PRs are Development-linked before authorized closure.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

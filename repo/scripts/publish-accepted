@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import os
+import sys
+from pathlib import Path
+
+
+def main():
+    root = Path.cwd().resolve()
+    target = root / "repo/governance/publish_accepted.py"
+    if not (root / ".git").exists() or not target.is_file():
+        print(
+            "repo/scripts/publish-accepted must be invoked from repository root",
+            file=sys.stderr,
+        )
+        return 2
+    os.execv(
+        sys.executable,
+        [sys.executable, "-B", str(target), *sys.argv[1:]],
+    )
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

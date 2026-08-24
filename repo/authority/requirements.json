@@ -1,0 +1,1923 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-registry",
+  "requirements_total": 191,
+  "authority_order": [
+    "FS0-AUTH-FRAMEWORK",
+    "FS0-AUTH-GOVERNANCE",
+    "FS0-AUTH-CONFORMANCE",
+    "FS0-AUTH-ASSURANCE"
+  ],
+  "requirements": [
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-001",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The authoritative framework namespace SHALL have one machine-resolvable identity whose concrete filesystem placement is defined by repository configuration.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-002",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "FS0 SHALL contain exactly one foundational Framework Contract authority.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-003",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The Framework Contract SHALL explicitly delegate to Governance, Conformance, and Assurance.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-004",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Every accepted authority SHALL have a stable machine-resolvable identity.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-005",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Every independently governed semantic invariant SHALL have exactly one controlling normative authority owner.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-006",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Every filesystem object beneath the repository root SHALL require applicable positive authorization from the canonical repository-structure configuration.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-007",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Implementation, validation output, review findings, generated artifacts, workflow convention, historical state, product behavior, and technical write capability SHALL NOT independently create normative authority.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-008",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Normative authority dependencies SHALL be acyclic.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-009",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Every maintained derived framework primitive SHALL have resolvable provenance to accepted normative authority.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-010",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Each accepted normative obligation SHALL be represented by an identified requirement with owner, statement, lifecycle state, lineage where applicable, and Conformance and Assurance applicability.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-011",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Bootstrap SHALL initialize the target Git repository when absent and create the first local commit containing the complete initial FS0 candidate; bootstrap SHALL NOT create the GitHub repository, publish remote state, or establish user credentials.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-012",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Before local bootstrap mutation, bootstrap SHALL verify required local Git and execution capabilities; GitHub remote, authentication, network, and publication capabilities SHALL NOT be prerequisites to construction of the initial local FS0 candidate.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-013",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The operating substrate SHALL provide Git operations, authenticated GitHub API access, HTTPS/TLS and name resolution, maintained-script execution, remote Conformance evidence retrieval, and accepted-state publication.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-014",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Authentication secrets, tokens, private keys, and equivalent credentials SHALL remain external to repository-maintained state.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-015",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "GitHub SHALL be the required initial FS0 operating platform.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-016",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "FS0 SHALL support repository read/write; Git ref read/create/update; issue and pull-request operations; workflow/check and commit/status reads; event-driven workflow execution; and authenticated actor resolution.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-017",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Bootstrap SHALL generate the required repository-orientation and license surfaces at configuration-authorized locations.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-018",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Canonical repository-orientation surfaces SHALL remain subordinate operational surfaces and SHALL NOT become independent semantic owners.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-019",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The bootstrap prototype and initial installed FS0 SHALL use GNU General Public License version 3 unless later accepted Governance changes that decision where legally permitted.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-020",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The retained bootstrap payload SHALL contain only Design input, canonical realization inputs, and implementation required to construct, verify, accept, cut over, and maintain FS0.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-021",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Generated artifacts SHALL remain semantically distinct from non-authoritative bootstrap maintenance source and SHALL require structural authorization at their configured locations.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-022",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "FS0 SHALL expose exactly one canonical bootstrap invocation surface that is machine-resolvable from repository state.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-023",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The canonical bootstrap invocation surface SHALL contain only invocation concerns and delegate substantive behavior to separately identified implementation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-024",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Once copied into the target repository, the bootstrap payload SHALL require no semantic, template, generator, or script input from the originating bootstrap environment.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-025",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Bootstrap SHALL install the complete successor repo-spec Design Proposal seed set before cutover.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-026",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Each installed successor Design Proposal SHALL have one canonical structured read representation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-027",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "After cutover, authoritative determination SHALL use accepted authoritative read surfaces and SHALL NOT use non-authoritative bootstrap maintenance source as fallback authority.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-028",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "FS0 SHALL retain one machine-resolvable non-authoritative bootstrap maintenance-source and generation role after cutover.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-029",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Exactly one canonical repository-structure configuration SHALL be the sole instance-level source of filesystem permission beneath the repository root.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-030",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "A present filesystem object beneath the repository root without applicable positive structural authorization SHALL cause Conformance failure.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-031",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The bootstrap lifecycle SHALL permit only candidate -> cutover and no reverse transition.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-032",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "After cutover, bootstrap maintenance machinery SHALL NOT independently authorize mutation or create acceptance.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-033",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "After cutover, FS0 SHALL complete bounded self-change through accepted authority, candidate publication, Conformance, Assurance, explicit acceptance, and accepted-state publication without the external bootstrap environment.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-034",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Every FS0 JSON record SHALL contain schema_version and record_type.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-035",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Each FS0 authority record SHALL contain schema_version, record_type authority, authority_id, title, owner, lifecycle_state, dependencies, delegates, requirements, and provenance.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-036",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Each installed requirement record SHALL contain requirement_id, owner_authority_id, statement, lifecycle_state, lineage where applicable, conformance_applicability, and assurance_applicability.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-037",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "FS0 SHALL maintain one machine-resolvable bootstrap state record containing lifecycle state, bootstrap provenance issue when established, accepted ref, and cutover timestamp when established.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-038",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The canonical repository-orientation surface SHALL state repository purpose, bootstrap/cutover status, Design Proposal discovery, accepted-state discovery, operation guidance, and limits on implementation/GitHub authority.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-039",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The canonical agent-orientation surface SHALL state initial reading order, Design-chunk discovery, bootstrap/cutover-state discovery, and accepted-state resolution after cutover.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-040",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Bootstrap verification SHALL fail if any required generated orientation or license surface is absent.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-041",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "FS0 SHALL distinguish repository content, desired GitHub operating state, observed GitHub state, authorized mutation, and verified resulting state.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-042",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Canonical bootstrap source roles SHALL keep FS0 realization input semantically distinct from successor Design Proposal input.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-043",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Governance, Conformance, and Assurance SHALL be the only authority-bearing keystones delegated by the Framework Contract.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-044",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "No FS0 authority record SHALL acquire keystone authority implicitly.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-045",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Every accepted normative requirement SHALL have a stable machine-resolvable identity.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-046",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "A missing bootstrap prerequisite SHALL stop bootstrap with a clear error before mutation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-047",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "GitHub mechanisms SHALL remain subordinate realizations and SHALL NOT define Governance, Conformance, or Assurance semantics.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-048",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Generated repository-orientation and license surfaces SHALL be deterministic for identical canonical inputs except explicitly declared variable installation-state fields.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-049",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Repository-orientation surfaces SHALL NOT become independent semantic owners.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-050",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Substantive bootstrap implementation SHALL be machine-resolvably distinct from the canonical bootstrap invocation surface.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-051",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Every bootstrap-installed successor Design Proposal seed SHALL have authority state none.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-052",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Each generated successor Design Proposal Markdown surface SHALL be a deterministic projection of its canonical structured proposal read representation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-053",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Generated proposal Markdown SHALL NOT become an independent semantic owner.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-054",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Post-cutover FS0 SHALL require no semantic, template, generator, or script input from an external bootstrap environment.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-055",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The repository root SHALL be the complete structural governance boundary; no filesystem namespace beneath it SHALL remain outside structural governance.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-056",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Authority lifecycle_state SHALL support accepted, superseded, and withdrawn.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-057",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Requirement conformance_applicability SHALL be mechanical or none.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-058",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Requirement assurance_applicability SHALL be required or none.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-059",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Bootstrap state SHALL be candidate or cutover.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-060",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "After cutover, the bootstrap cutover record SHALL be immutable except through later accepted authority that explicitly governs recovery or reconstruction.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-061",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The canonical agent-orientation surface SHALL prohibit treating technical write capability as authority, require exact candidate/evidence inspection before mutation, and require post-cutover persistent framework mutation to route through Governance.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-062",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "FS0 SHALL NOT infer that one GitHub/repository state class has another state class's semantics merely because the states coincide.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-063",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Canonical bootstrap maintenance data SHALL provide the maintained source required to derive FS0 artifacts.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-064",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Successor Design Proposal source data SHALL remain machine-resolvably identifiable as a distinct canonical bootstrap source role.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-065",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Bootstrap-created maintained artifacts SHALL be generated from canonical maintenance data by separately identified generator implementation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-066",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Generated FS0 read and operating surfaces SHALL NOT be independently maintained as canonical source.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-067",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Generation SHALL be deterministic for identical canonical inputs and explicitly declared variable inputs.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-068",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "FS0 SHALL have one machine-resolvable canonical maintenance-data source role for generated FS0 artifacts.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-069",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "FS0 semantic and realization choices required for generation SHALL be represented in canonical maintenance data rather than embedded in generator code.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-070",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Generator code SHALL NOT independently define FS0 normative semantics.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-071",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The FS0 generation source registry SHALL remain non-authoritative maintenance metadata.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-072",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Bootstrap source SHALL NOT replace an accepted generated read surface as authority when source and read surface disagree.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-073",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Post-cutover FS0 maintenance that modifies bootstrap source SHALL occur only through Governance-authorized work.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-074",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Each uniquely identified normative requirement SHALL express exactly one primary normative obligation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-075",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Each normative requirement statement SHALL contain no more than 300 characters.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-076",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Material normative semantics SHALL NOT be omitted solely to satisfy the requirement-statement length bound.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-077",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Generated FS0 read surfaces SHALL be produced from canonical maintenance data by the identified generation implementation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-078",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Every bootstrap-created maintained FS0 generated artifact SHALL be reproducible from its canonical maintenance data and identified generation implementation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-079",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Each generated successor Design Proposal artifact SHALL be reproducible from canonical proposal source data and identified generation implementation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-080",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Absence of applicable structural authorization for a filesystem object beneath the repository root SHALL mean deny.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-081",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "No version-control, ignored, generated, cached, temporary, editor, build, tool, or runtime filesystem class SHALL receive implicit structural authorization.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-082",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Governed repository state SHALL determine exactly one canonical repository-structure configuration identity for the validation subject.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-083",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The operating substrate SHALL resolve the governed repository-structure configuration identity and SHALL NOT select among candidate configurations.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-084",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Caller preference, environment convention, implementation default, filename convention, search order, or fallback location SHALL NOT determine the canonical repository-structure configuration identity.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-085",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The canonical repository-structure configuration SHALL positively authorize its own filesystem object.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-086",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Repository-structure authorization SHALL distinguish required presence from permitted presence.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-087",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Authorizing a directory SHALL authorize only that directory object unless complete-subtree authorization is explicit.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-088",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Complete-subtree authorization SHALL authorize descendant paths without requiring individual descendant path declarations.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-089",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Complete-subtree authorization SHALL NOT override repository-wide structural invariants, including object-type admissibility.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-090",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Repository-structure authorization SHALL support ordinary files, directories, and symbolic links as explicit object types.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-091",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "A filesystem object type unsupported by canonical repository-structure configuration semantics SHALL be denied.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-092",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "A symbolic link SHALL be structurally authorized as the link object itself.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-093",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Repository-structure traversal SHALL NOT follow symbolic-link targets to discover descendants.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-094",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "A symbolic-link target outside the repository root SHALL NOT enlarge the repository-structure governance boundary.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-095",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Bootstrap creation of a candidate filesystem object SHALL NOT independently grant structural authorization.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-096",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "After candidate creation, bootstrap conventions, hard-coded paths, generator destination lists, and tool defaults SHALL NOT substitute for structural authorization.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-097",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "The operating substrate SHALL resolve the canonical repository-structure configuration identity through a location-independent mechanism.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-098",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "A structurally permitted filesystem object MAY be absent without causing repository-structure Conformance failure.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-FC-099",
+      "owner_authority_id": "FS0-AUTH-FRAMEWORK",
+      "statement": "Implementation defaults, generated output lists, version-control ignore rules, workflow conventions, historical presence, and prior validation SHALL NOT independently authorize filesystem structure.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-001",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "FS0 Governance SHALL implement Design Proposal -> Design -> Plan -> Build -> accepted repository state.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-002",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Design SHALL use Audit, Normalize, Accept; Plan SHALL use Analyze, Specify, Accept; Build SHALL use Implement, Verify, Accept.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-003",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Each governed Design, Plan, and Build work item SHALL record stable identity, predecessor, scope, material exclusions where applicable, candidate result, completion conditions, disposition, provenance, and bounded_authorization containing acceptance_actor.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-004",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Design SHALL consume a non-authoritative Design Proposal.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-005",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Plan SHALL consume accepted Design authority and define realization intent covering affected artifacts, Conformance work, Assurance work, dependencies, sequencing, and bounded Build scope.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-006",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Build SHALL consume an accepted Plan and implement only work authorized by that Plan.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-007",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Semantic defects SHALL route to Design, realization-intent defects to Plan, and implementation defects to Build.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-008",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Governance acceptance SHALL be explicit, attributable, traceable, candidate-specific, and realized by an authorized merge of an eligible governed pull request.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-009",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "A Governance acceptance decision SHALL depend only on authority accepted before the candidate acquires authority produced by that acceptance.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-010",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "A governed work item SHALL authorize only its explicit scope.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-011",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Each governed pull request SHALL identify exactly one governed-work issue; one governed-work issue MAY be realized through one or more pull requests.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-012",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "A governed pull request MAY contain one or more commits; acceptance applies to the complete current pull-request candidate change set.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-013",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Required Conformance and Assurance SHALL gate merge eligibility for the complete current governed pull-request candidate.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-014",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Bootstrap acceptance SHALL be the authorized merge of the designated bootstrap-cutover pull request after passing bootstrap mechanical validation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-015",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "A merge candidate SHALL retain the exact accepted predecessor identities it depends on and SHALL be reevaluated if an applicable predecessor changes.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-016",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "After cutover, refs/heads/main SHALL identify the accepted repository state resulting from the most recent authorized governed pull-request merge.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-017",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Closing, approval, workflow success, Conformance success, or Assurance findings SHALL NOT independently create acceptance; authorized merge of an eligible governed PR SHALL.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-018",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Initial bootstrap SHALL use one dedicated provenance issue and one designated bootstrap-cutover pull request targeting refs/heads/main.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-019",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "For governed merge acceptance, the GitHub merge actor SHALL equal the governed issue bounded_authorization.acceptance_actor.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-020",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "After FS0 cutover, every persistent framework change SHALL occur through FS0 Governance.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-021",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Design Normalize SHALL identify materially compound obligations, ambiguity, contradiction, duplication, inappropriate implementation leakage, and missing semantic ownership.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-022",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "The installed proposal registry SHALL record proposal identity, order, installed path, lifecycle state, bootstrap provenance, authority state, reconstruction dependencies, and predecessor/successor identities where applicable.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-023",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Bootstrap-installed seed proposal registry records SHALL use lifecycle state available, bootstrap provenance bootstrap-seed, and authority state none.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-024",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "The proposal registry SHALL let a fresh agent enumerate available unprocessed successor Design Proposals and reconstruction dependencies without chat history.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-025",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "After cutover, a bootstrap-installed seed proposal SHALL NOT be mutated in place.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-026",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "In the fixed FS0 GitHub binding, Design governed work SHALL use a GitHub issue.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-027",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "FS0 SHALL make current governed work and accepted realization intent machine-resolvable from repository and GitHub state without chat history.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-028",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Design, Plan, and Build SHALL be represented as distinct governed work.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-029",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Design SHALL audit accepted authority and relevant repository state.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-030",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Design SHALL normalize persistent normative semantics into identified requirements.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-031",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Design acceptance SHALL be realized by authorized merge of an eligible Design pull request associated with its governed Design issue.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-032",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Plan SHALL NOT create or amend normative semantics.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-033",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Build SHALL produce required evidence, invoke required Conformance, perform required semantic audit, and continue governed work rather than merge when that audit is adverse.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-034",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Build SHALL NOT invent Design semantics or Plan intent.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-035",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Governance acceptance SHALL be authorized merge of the exact conforming governed pull request after semantic audit; that merge SHALL also record candidate Assurance satisfaction.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-036",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Completion or acceptance of governed work SHALL NOT independently authorize unrelated or successor work.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-037",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "refs/heads/main SHALL change accepted repository state only through an authorized merge of an eligible governed pull request.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-038",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "The external bootstrap provenance issue SHALL anchor exactly one designated bootstrap-cutover acceptance pull request and SHALL NOT be FS0-governed work.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-039",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Privileged mutation SHALL remain bounded by accepted authority, accepted Plan, and authorized Build scope.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-040",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "No bootstrap-only mechanism SHALL independently create accepted framework state after cutover.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-041",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "A correction to a bootstrap-installed seed proposal SHALL use a new or successor proposal with explicit lineage.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-042",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "In the fixed FS0 GitHub binding, Plan governed work SHALL use a separate GitHub issue.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-043",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "In the fixed FS0 GitHub binding, Build governed work SHALL use a separate GitHub issue.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-044",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "In the fixed FS0 GitHub binding, candidate repository state SHALL use a Git branch plus exact commit SHA.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-045",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "In the fixed FS0 GitHub binding, the candidate review surface SHALL use a pull request.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-046",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "FS0 SHALL make the active Design work, initiating proposal, and candidate or accepted normative delta machine-resolvable without chat history.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-047",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "FS0 SHALL make the exact revision under review, acceptance status, resulting accepted revision, and remaining unauthorized work machine-resolvable without chat history.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-048",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "Design Normalize SHALL decompose materially compound obligations into separately identified requirements.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-049",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "A governed PR SHALL NOT be accepted unless its exact current head has passing Conformance and a satisfactory applicable semantic-audit receipt before authorized merge.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-GOV-050",
+      "owner_authority_id": "FS0-AUTH-GOVERNANCE",
+      "statement": "A governed issue SHALL remain open until exact main has a satisfactory completion-audit receipt and relevant accepted PRs are Development-linked before authorized closure.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-001",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Every active accepted requirement SHALL have exactly one canonical Conformance correspondence declaring applicability mechanical or none.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-002",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Every mechanically applicable requirement SHALL resolve through its canonical correspondence to at least one executable assertion with stable assertion identity.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-003",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "FS0 Conformance SHALL use assertion, support, evidence, and orchestration as its only required top-level primitive roles.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-004",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Assertion identity SHALL remain distinct from implementation-callable identity.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-005",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Every maintained Conformance primitive SHALL resolve to accepted normative authority.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-007",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Every executable assertion SHALL produce or resolve the evidence required by FS0 Conformance authority.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-008",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Every gating assertion SHALL be reachable from authorized canonical Conformance execution.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-009",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "FS0 Conformance evidence SHALL demonstrate conforming-state acceptance, targeted-violation rejection, and execution of required assertions.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-010",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "FS0 SHALL provide one canonical remotely runnable Conformance surface through GitHub Actions.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-011",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Before cutover, execution of candidate Conformance machinery SHALL be bootstrap mechanical verification evidence only.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-013",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Each installed Conformance correspondence record SHALL contain requirement_id, applicability, and assertion_ids.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-014",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "In the fixed FS0 GitHub binding, canonical Conformance execution SHALL use the repository GitHub Actions workflow.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-015",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Multiple assertions MAY share one implementation only when assertion identities and provenance remain distinct.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-016",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "FS0 SHALL provide one machine-resolvable canonical repository Conformance execution entry point invoked by the fixed FS0 GitHub workflow.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-017",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "After cutover, the accepted Conformance execution surface SHALL be canonical unless later changed through Governance.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-018",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "A Conformance correspondence with applicability mechanical SHALL contain at least one stable assertion identity.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-019",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "A Conformance correspondence with applicability none SHALL contain an empty assertion_ids collection.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-020",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Conformance evidence in the fixed FS0 GitHub binding SHALL be a workflow or check result tied to the exact candidate commit SHA.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-021",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Every generated FS0 read surface SHALL be reproducible from its declared canonical maintenance inputs and identified generation implementation.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-022",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Canonical Conformance SHALL compare generated FS0 read surfaces with deterministic regeneration from their declared canonical source inputs.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-023",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "A failed generation-correspondence check SHALL produce a Conformance defect.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-024",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Conformance SHALL reject a normative requirement statement longer than 300 characters.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-025",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Repository-structure Conformance SHALL evaluate the actual filesystem namespace beneath the repository root rather than only tracked, maintained, generated, or preclassified objects.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-026",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "For every observed filesystem object beneath the repository root, Conformance SHALL resolve applicable structural authorization.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-027",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "For every repository-structure configuration entry requiring presence, Conformance SHALL verify that the required filesystem object exists.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-028",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Repository-structure Conformance SHALL fail when governed state does not determine exactly one canonical structure-configuration identity or that identity does not resolve to exactly one configuration object.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-CONF-029",
+      "owner_authority_id": "FS0-AUTH-CONFORMANCE",
+      "statement": "Repository-structure Conformance failure SHALL identify unauthorized or missing filesystem objects sufficiently for correction.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-001",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "Every active accepted requirement SHALL have exactly one canonical Assurance correspondence declaring applicability required or none.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-002",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "A required Assurance obligation SHALL be resolvable through the governed issue or PR audit context and the applicable structured semantic-audit receipt for the exact subject.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-003",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "FS0 Assurance SHALL support requirement-quality, ambiguity, contradiction, Design-fidelity, Plan-fidelity, Build-fidelity, Conformance-interpretation, and evidence-sufficiency review.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-004",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "An adverse semantic-audit receipt SHALL block the applicable merge or issue closure until a later satisfactory receipt applies to the same exact subject.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-005",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "Every Assurance audit receipt SHALL make governed work, exact subject, required obligations, outcome, evidence, material exclusions, and audit time resolvable.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-006",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "A review subject SHALL NOT authorize its own Assurance review.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-007",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "An Assurance audit conclusion SHALL be specific to the exact governed audit subject identified by its applicable structured receipt.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-008",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "Each installed Assurance correspondence record SHALL contain requirement_id, applicability, and obligation_ids.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-009",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "In the fixed FS0 GitHub binding, maintained Assurance provenance SHALL use governed issue and pull-request state/history rather than duplicate repository-tree case or finding artifacts.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-010",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "An Assurance audit receipt or conclusion SHALL NOT independently create, amend, supersede, or withdraw persistent normative authority.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-011",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "Persistent semantic change identified by Assurance SHALL route through Governance Design.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-012",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "An Assurance correspondence with applicability required SHALL contain at least one stable review-obligation identity.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-013",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "An Assurance correspondence with applicability none SHALL contain an empty obligation_ids collection.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "none"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-014",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "Candidate and completion semantic-audit receipts, GitHub evidence/history, and their merge or issue-closure dispositions SHALL be remotely accessible.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "mechanical",
+      "assurance_applicability": "required"
+    },
+    {
+      "schema_version": "1",
+      "record_type": "requirement",
+      "requirement_id": "FS0-ASSUR-015",
+      "owner_authority_id": "FS0-AUTH-ASSURANCE",
+      "statement": "Assurance requirement-quality review SHALL detect materially compound identified requirements and material semantic omission caused by statement-length compression.",
+      "lifecycle_state": "accepted",
+      "conformance_applicability": "none",
+      "assurance_applicability": "required"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "record_type": "assurance-realization-data",
+  "artifacts": [
+    {
+      "source": "assurance/runtime.py",
+      "target": "repo/assurance/runtime.py",
+      "mode": "0755"
+    }
+  ]
+}

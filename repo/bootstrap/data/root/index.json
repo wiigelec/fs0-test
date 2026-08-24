@@ -1,0 +1,26 @@
+{
+  "schema_version": "1",
+  "record_type": "generated-root-surface-index",
+  "artifacts": [
+    {
+      "source": "README.md",
+      "target": "README.md",
+      "role": "human-orientation"
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "AGENTS.md",
+      "role": "agent-orientation"
+    },
+    {
+      "source": "LICENSE",
+      "target": "LICENSE",
+      "role": "license"
+    },
+    {
+      "source": "fs0-conformance.yml",
+      "target": ".github/workflows/fs0-conformance.yml",
+      "role": "canonical-conformance-workflow"
+    }
+  ]
+}

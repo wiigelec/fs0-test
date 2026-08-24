@@ -1,0 +1,737 @@
+{
+  "schema_version": "1",
+  "record_type": "repository-structure-configuration",
+  "configuration_id": "FS0-REPOSITORY-STRUCTURE",
+  "objects": [
+    {
+      "path": ".git",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "complete-subtree"
+    },
+    {
+      "path": ".github",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": ".github/workflows",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": ".github/workflows/fs0-conformance.yml",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "AGENTS.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "LICENSE",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "README.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/assurance",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/assurance/correspondence.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/assurance/obligations.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/assurance/runtime.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/authority",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/authority/assurance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/authority/conformance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/authority/framework.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/authority/governance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/authority/requirements.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/authority",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/authority/assurance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/authority/conformance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/authority/framework.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/authority/governance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/bootstrap_recovery_authority.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/generation_contract.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/github_operating_state.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/model.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/proposals",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/proposals/assurance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/proposals/conformance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/proposals/framework-contract.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/proposals/governance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/assurance",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/assurance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/assurance/runtime.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/conformance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/conformance_provenance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/generation_contract.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/generation_semantics.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/accepted-state",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/accepted_state.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/bootstrap-cutover",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/bootstrap_cutover.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/bootstrap_mutation_guard.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/github_binding.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/proposals.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/publish-accepted",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/publish_accepted.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/self-change",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/self_change.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/realization/governance/work.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/assurance",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/assurance/001-015.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/conformance",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/conformance/001-022.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/conformance/023-024.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/conformance/025-028.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/conformance/029-029.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/framework",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/framework/001-020.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/framework/021-040.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/framework/041-060.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/framework/061-079.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/framework/080-096.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/framework/097-099.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/governance",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/governance/001-020.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/governance/021-040.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/governance/041-048.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/requirements/governance/049-050.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/retained_payload.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/root",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/root/AGENTS.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/root/LICENSE",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/root/README.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/root/fs0-conformance.yml",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/root/index.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/root/script-transfer-handoff.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/self_change_contract.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/state",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/data/state/bootstrap.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/state_classes.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/data/structure.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/design",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/design/fs0-authority-governance.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/design/fs0-conformance-assurance.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/design/fs0-design.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/design/fs0-github.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/design/fs0-installed-layout.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/design/fs0-operating-substrate.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/design/fs0-self-hosting.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/scripts",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/scripts/bootstrap",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/scripts/src",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/bootstrap/scripts/src/conformance_realization.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/scripts/src/generate.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/bootstrap/scripts/src/preflight.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/conformance",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/conformance/assertions.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/conformance/correspondence.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/conformance/evidence.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/conformance/orchestration.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/conformance/run.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/conformance/support",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/conformance/support/implementations.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/governance",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/governance/accepted_state.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/governance/bootstrap_cutover.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/governance/bootstrap_mutation_guard.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/governance/github_binding.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/governance/proposals.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/governance/publish_accepted.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/governance/self_change.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/governance/work.py",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/proposals",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/proposals/assurance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/proposals/assurance.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/proposals/conformance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/proposals/conformance.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/proposals/framework-contract.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/proposals/framework-contract.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/proposals/governance.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/proposals/governance.md",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/proposals/registry.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/scripts",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/scripts/accepted-state",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/scripts/bootstrap-cutover",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/scripts/publish-accepted",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/scripts/self-change",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/scripts/validate",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/state",
+      "object_type": "directory",
+      "presence": "required",
+      "descendants": "closed"
+    },
+    {
+      "path": "repo/state/bootstrap.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "repo/state/repository-structure-binding.json",
+      "object_type": "file",
+      "presence": "required"
+    },
+    {
+      "path": "user",
+      "object_type": "directory",
+      "presence": "permitted",
+      "descendants": "complete-subtree"
+    }
+  ]
+}

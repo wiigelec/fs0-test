@@ -1,0 +1,55 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-GOVERNANCE",
+  "requirements": [
+    {
+      "id": "FS0-GOV-041",
+      "statement": "A correction to a bootstrap-installed seed proposal SHALL use a new or successor proposal with explicit lineage.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-042",
+      "statement": "In the fixed FS0 GitHub binding, Plan governed work SHALL use a separate GitHub issue.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-043",
+      "statement": "In the fixed FS0 GitHub binding, Build governed work SHALL use a separate GitHub issue.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-044",
+      "statement": "In the fixed FS0 GitHub binding, candidate repository state SHALL use a Git branch plus exact commit SHA.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-045",
+      "statement": "In the fixed FS0 GitHub binding, the candidate review surface SHALL use a pull request.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-GOV-046",
+      "statement": "FS0 SHALL make the active Design work, initiating proposal, and candidate or accepted normative delta machine-resolvable without chat history.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-047",
+      "statement": "FS0 SHALL make the exact revision under review, acceptance status, resulting accepted revision, and remaining unauthorized work machine-resolvable without chat history.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-GOV-048",
+      "statement": "Design Normalize SHALL decompose materially compound obligations into separately identified requirements.",
+      "c": "none",
+      "a": "required"
+    }
+  ]
+}

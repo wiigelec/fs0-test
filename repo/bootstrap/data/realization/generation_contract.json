@@ -1,0 +1,13 @@
+{
+  "schema_version": "1",
+  "record_type": "fs0-generation-contract",
+  "canonical_source_role": "canonical-bootstrap-maintenance-data",
+  "canonical_input_root": "repo/bootstrap/data",
+  "generation_implementation": "repo/bootstrap/scripts/src/generate.py",
+  "generation_entrypoint": "repo/bootstrap/scripts/bootstrap",
+  "correspondence_check": "repo/bootstrap/scripts/bootstrap --check",
+  "declared_variable_inputs": [],
+  "generated_output_ownership": "all outputs returned by the identified generator derive(root) function",
+  "generated_surfaces_are_canonical_source": false,
+  "post_cutover_bootstrap_source_mutation_requires_governance": true
+}

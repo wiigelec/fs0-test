@@ -1,0 +1,16 @@
+{
+  "schema_version": "1",
+  "record_type": "bootstrap-recovery-authority-policy",
+  "cutover_record": "repo/state/bootstrap.json",
+  "canonical_cutover_source": "repo/bootstrap/data/state/bootstrap.json",
+  "protected_paths": [
+    "repo/state/bootstrap.json",
+    "repo/bootstrap/data/state/bootstrap.json"
+  ],
+  "authority_stage": "plan",
+  "required_disposition": "accepted",
+  "permitted_authority_purposes": [
+    "bootstrap-recovery",
+    "bootstrap-reconstruction"
+  ]
+}

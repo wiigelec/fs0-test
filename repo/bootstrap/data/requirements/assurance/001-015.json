@@ -1,0 +1,97 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-ASSURANCE",
+  "requirements": [
+    {
+      "id": "FS0-ASSUR-001",
+      "statement": "Every active accepted requirement SHALL have exactly one canonical Assurance correspondence declaring applicability required or none.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-ASSUR-002",
+      "statement": "A required Assurance obligation SHALL be resolvable through the governed issue or PR audit context and the applicable structured semantic-audit receipt for the exact subject.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-ASSUR-003",
+      "statement": "FS0 Assurance SHALL support requirement-quality, ambiguity, contradiction, Design-fidelity, Plan-fidelity, Build-fidelity, Conformance-interpretation, and evidence-sufficiency review.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-ASSUR-004",
+      "statement": "An adverse semantic-audit receipt SHALL block the applicable merge or issue closure until a later satisfactory receipt applies to the same exact subject.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-ASSUR-005",
+      "statement": "Every Assurance audit receipt SHALL make governed work, exact subject, required obligations, outcome, evidence, material exclusions, and audit time resolvable.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-ASSUR-006",
+      "statement": "A review subject SHALL NOT authorize its own Assurance review.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-ASSUR-007",
+      "statement": "An Assurance audit conclusion SHALL be specific to the exact governed audit subject identified by its applicable structured receipt.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-ASSUR-008",
+      "statement": "Each installed Assurance correspondence record SHALL contain requirement_id, applicability, and obligation_ids.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-ASSUR-009",
+      "statement": "In the fixed FS0 GitHub binding, maintained Assurance provenance SHALL use governed issue and pull-request state/history rather than duplicate repository-tree case or finding artifacts.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-ASSUR-010",
+      "statement": "An Assurance audit receipt or conclusion SHALL NOT independently create, amend, supersede, or withdraw persistent normative authority.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-ASSUR-011",
+      "statement": "Persistent semantic change identified by Assurance SHALL route through Governance Design.",
+      "c": "none",
+      "a": "required"
+    },
+    {
+      "id": "FS0-ASSUR-012",
+      "statement": "An Assurance correspondence with applicability required SHALL contain at least one stable review-obligation identity.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-ASSUR-013",
+      "statement": "An Assurance correspondence with applicability none SHALL contain an empty obligation_ids collection.",
+      "c": "mechanical",
+      "a": "none"
+    },
+    {
+      "id": "FS0-ASSUR-014",
+      "statement": "Candidate and completion semantic-audit receipts, GitHub evidence/history, and their merge or issue-closure dispositions SHALL be remotely accessible.",
+      "c": "mechanical",
+      "a": "required"
+    },
+    {
+      "id": "FS0-ASSUR-015",
+      "statement": "Assurance requirement-quality review SHALL detect materially compound identified requirements and material semantic omission caused by statement-length compression.",
+      "c": "none",
+      "a": "required"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1",
+  "record_type": "requirement-source-set",
+  "authority": "FS0-AUTH-CONFORMANCE",
+  "requirements": [
+    {
+      "id": "FS0-CONF-029",
+      "statement": "Repository-structure Conformance failure SHALL identify unauthorized or missing filesystem objects sufficiently for correction.",
+      "c": "mechanical",
+      "a": "required"
+    }
+  ]
+}

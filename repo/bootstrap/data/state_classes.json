@@ -1,0 +1,44 @@
+{
+  "schema_version": "1",
+  "record_type": "fs0-state-class-contract",
+  "equivalence_policy": "no-state-class-implies-or-substitutes-for-another",
+  "state_classes": [
+    {
+      "role": "repository-content",
+      "record_type": "repository-content-state",
+      "required_fields": [
+        "revision"
+      ]
+    },
+    {
+      "role": "desired-github-operating-state",
+      "record_type": "desired-github-operating-state",
+      "required_fields": [
+        "desired_objects"
+      ]
+    },
+    {
+      "role": "observed-github-state",
+      "record_type": "observed-github-state",
+      "required_fields": [
+        "observations"
+      ]
+    },
+    {
+      "role": "authorized-mutation",
+      "record_type": "authorized-mutation",
+      "required_fields": [
+        "authority_basis",
+        "mutation_scope"
+      ]
+    },
+    {
+      "role": "verified-resulting-state",
+      "record_type": "verified-resulting-state",
+      "required_fields": [
+        "resulting_revision",
+        "verification_evidence"
+      ]
+    }
+  ]
+}
