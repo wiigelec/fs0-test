@@ -1,8 +1,8 @@
 {
   "schema_version": "1",
   "record_type": "bootstrap-state",
-  "state": "candidate",
-  "bootstrap_provenance_issue": null,
+  "state": "cutover",
+  "bootstrap_provenance_issue": 1,
   "accepted_ref": "refs/heads/main",
-  "cutover_timestamp": null
+  "cutover_timestamp": "2026-08-24T22:45:39Z"
 }
